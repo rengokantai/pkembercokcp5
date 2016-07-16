@@ -1,1 +1,12 @@
-{{outlet}}
+<h3>Foo2</h3>
+
+{{#each model as |letters|}}
+    {{letters}}<br>
+{{/each}}
+<h3>From the foo1 controller</h3>
+{{#each foo1 as |letters|}}
+    {{letters}}<br>
+{{/each}}
+
+<h3>Foo1 property</h3>
+{{foo1Controller.prop1}}
